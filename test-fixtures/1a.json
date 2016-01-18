@@ -1,0 +1,22 @@
+{ 
+
+  "_comment": "Order of donor-patient pairs doesn't matter",
+
+  "data" :
+    {
+    "202" : { "sources" : [102], "dage" : 45,
+              "matches" : [ { "recipient" : 105, "score" : 1} ]},
+ 
+    "201" : { "sources" : [101], "dage" : 65,
+              "matches" : [ { "recipient" : 102, "score" : 3},
+                            { "recipient" : 105, "score" : 2} ]},
+    "203" : { "altruistic": true, "dage" : 29,
+              "matches" : [ { "recipient" : 102, "score" :  10} ]},
+ 
+    "204" : { "altruistic": true, "dage" : 29,
+               "matches" : [ { "recipient" : 105, "score" :  10} ]},
+ 
+    "205" : { "sources" : [105],
+              "dage": 29 }
+    }
+}
